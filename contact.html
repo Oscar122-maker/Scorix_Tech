@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Scorix | Request IT, Security or Website Support</title>
+  <meta name="description" content="Contact Scorix for IT support, CCTV and alarm systems, website services, training, and technology advice." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="main.html" aria-label="Scorix home">
+        <img src="images/background-removed-background-removed.png" alt="Scorix logo" />
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        Menu
+      </button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="main.html#services">Services</a>
+        <a href="main.html#process">Process</a>
+        <a href="main.html#pricing">Plans</a>
+        <a href="main.html#about">About</a>
+      </nav>
+      <a class="button button-primary nav-cta" href="ticket.html">Support Ticket</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Contact Scorix</p>
+        <h1>Tell us what you need help with.</h1>
+        <p>Share a few details about your organisation, the service you need, and the best way to reach you. We will come back with the next step.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-panel">
+          <h2>Contact details</h2>
+          <div class="contact-line">
+            <span>TEL</span>
+            <a href="Call:+27683122388">+27 68 312 2388</a>
+          </div>
+          <div class="contact-line">
+            <span>MAIL</span>
+            <a href="mailto:info@scorixtechnology.co.za">info@scorixtechnology.co.za</a>
+          </div>
+          <div class="contact-line">
+            <span>LOC</span>
+            <p>Mokopane, South Africa</p>
+          </div>
+          <div class="contact-note">
+            <h3>For urgent faults</h3>
+            <p>Use the support ticket page so we can capture the issue category, impact, and contact details clearly.</p>
+            <a class="button button-secondary" href="ticket.html">Create Ticket</a>
+          </div>
+        </aside>
+
+        <form class="form-card js-form" data-form-type="contact">
+          <div class="form-heading">
+            <h2>Request a consultation</h2>
+            <p>Fields marked with * are required.</p>
+          </div>
+          <div class="status-message" aria-live="polite"></div>
+
+          <div class="form-grid">
+            <label>
+              Full name *
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email *
+              <input type="email" name="email" placeholder="name@example.com" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+27 68 000 0000" />
+            </label>
+            <label>
+              Organisation
+              <input type="text" name="company" placeholder="Company, school or organisation" />
+            </label>
+            <label>
+              Service needed *
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option>IT support</option>
+                <option>CCTV installation</option>
+                <option>Alarm system</option>
+                <option>Website development</option>
+                <option>Training</option>
+                <option>General consultation</option>
+              </select>
+            </label>
+            <label>
+              Preferred contact method
+              <select name="contact_method">
+                <option>Phone</option>
+                <option>Email</option>
+                <option>WhatsApp</option>
+              </select>
+            </label>
+            <label class="span-2">
+              Message *
+              <textarea name="message" rows="6" placeholder="Briefly describe what you need, where you are based, and any timeline you have in mind." required></textarea>
+            </label>
+          </div>
+
+          <button class="button button-primary" type="submit">Send Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/background-removed-background-removed.png" alt="Scorix logo" />
+        <p>IT support, security systems, websites, and training for growing organisations.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <a href="main.html">Home</a>
+        <a href="main.html#services">Services</a>
+        <a href="ticket.html">Support Ticket</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="tel:+27683122388">+27 68 312 2388</a>
+        <a href="mailto:info@scorixtechnology.co.za">info@scorixtechnology.co.za</a>
+        <span>Mokopane, South Africa</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Scorix. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

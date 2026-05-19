@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support Ticket | Scorix</title>
+  <meta name="description" content="Create a Scorix support ticket for IT, network, CCTV, alarm, website, or training support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="main.html" aria-label="Scorix home">
+        <img src="images/background-removed-background-removed.png" alt="Scorix logo" />
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        Menu
+      </button>
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary navigation">
+        <a href="main.html">Home</a>
+        <a href="main.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="button button-secondary nav-cta" href="main.html">Back Home</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Support Ticket</p>
+        <h1>Log an issue clearly so we can respond properly.</h1>
+        <p>Use this form for technical faults, CCTV or alarm issues, website changes, and support requests.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container support-layout">
+        <aside class="support-sidebar">
+          <h2>Before you submit</h2>
+          <ul class="check-list">
+            <li>Describe what changed and when it started.</li>
+            <li>Include affected users, devices, or locations.</li>
+            <li>Choose the priority based on business impact.</li>
+          </ul>
+          <div class="contact-note">
+            <h3>Urgent?</h3>
+            <p>For time-sensitive issues, submit the ticket and call us directly.</p>
+            <a class="button button-primary" href="Call:+27683122388">Call Scorix</a>
+          </div>
+        </aside>
+
+        <form class="form-card js-form" data-form-type="ticket">
+          <div class="form-heading">
+            <h2>Create support ticket</h2>
+            <p>Fields marked with * are required.</p>
+          </div>
+          <div class="status-message" aria-live="polite"></div>
+
+          <div class="form-grid">
+            <label>
+              Full name *
+              <input type="text" name="name" placeholder="Your full name" required />
+            </label>
+            <label>
+              Email *
+              <input type="email" name="email" placeholder="name@example.com" required />
+            </label>
+            <label>
+              Phone *
+              <input type="tel" name="phone" placeholder="+27 68 000 0000" required />
+            </label>
+            <label>
+              Organisation *
+              <input type="text" name="company" placeholder="Company, school or organisation" required />
+            </label>
+            <label>
+              Issue category *
+              <select name="service" required>
+                <option value="">Select a category</option>
+                <option>IT support</option>
+                <option>Network or internet</option>
+                <option>CCTV system</option>
+                <option>Alarm system</option>
+                <option>Website update</option>
+                <option>Training request</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>
+              Priority *
+              <select name="priority" required>
+                <option value="">Select priority</option>
+                <option>Critical - work is stopped</option>
+                <option>High - major impact</option>
+                <option>Medium - partial impact</option>
+                <option>Low - request or minor issue</option>
+              </select>
+            </label>
+            <label class="span-2">
+              Subject *
+              <input type="text" name="subject" placeholder="Short summary of the issue" required />
+            </label>
+            <label class="span-2">
+              Details *
+              <textarea name="message" rows="7" placeholder="Explain the issue, affected systems, location, and anything already tried." required></textarea>
+            </label>
+            <label class="checkbox span-2">
+              <input type="checkbox" name="acknowledge" required />
+              <span>I confirm the details are accurate and Scorix may contact me about this request.</span>
+            </label>
+          </div>
+
+          <button class="button button-primary" type="submit">Submit Ticket</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Support guide</p>
+          <h2>How priority is handled.</h2>
+        </div>
+        <div class="service-grid compact">
+          <article class="service-card">
+            <h3>Critical</h3>
+            <p>Systems are down, work is stopped, or there is a serious security concern.</p>
+          </article>
+          <article class="service-card">
+            <h3>High</h3>
+            <p>A major workflow is affected but there may be a temporary workaround.</p>
+          </article>
+          <article class="service-card">
+            <h3>Medium</h3>
+            <p>Some users or services are affected, but business can continue.</p>
+          </article>
+          <article class="service-card">
+            <h3>Low</h3>
+            <p>General requests, small changes, planned maintenance, or advice.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="images/background-removed-background-removed.png" alt="Scorix logo" />
+        <p>IT support, security systems, websites, and training for growing organisations.</p>
+      </div>
+      <div>
+        <h3>Quick links</h3>
+        <a href="main.html">Home</a>
+        <a href="main.html#services">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="tel:+27683122388">+27 68 312 2388</a>
+        <a href="mailto:info@scorixtechnology.co.za">info@scorixtechnology.co.za</a>
+        <span>Mokopane, South Africa</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; 2026 Scorix. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -49,17 +49,19 @@ forms.forEach((form) => {
     }
 
     const submitButton = form.querySelector('button[type="submit"]');
-    const originalLabel = submitButton.textContent;
+    const originalLabel = submitButton.innerHTML;
     const name = form.elements.name?.value.trim() || "there";
     const formType = form.dataset.formType || "request";
 
     submitButton.disabled = true;
+    submitButton.setAttribute("aria-busy", "true");
     submitButton.textContent = "Sending...";
 
     window.setTimeout(() => {
       form.reset();
       submitButton.disabled = false;
-      submitButton.textContent = originalLabel;
+      submitButton.removeAttribute("aria-busy");
+      submitButton.innerHTML = originalLabel;
 
       const label = formType === "ticket" ? "support ticket" : "request";
       setStatus(form, "success", `Thanks ${name}. Your ${label} has been received. Scorix will contact you with the next step.`);
